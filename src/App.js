@@ -5,6 +5,7 @@ import { ArrayHoroscope } from './shared/constant/ConstantHoroscope';
 
 import { PageZodiac } from './pages/PageZodiac';
 import { Layout } from './components/Layout';
+import Interna from './components/interna/Interna';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {/* <Route path="/:id">
             <PageDetailsHoroscope info={notice} />
           </Route> */}
+          <Interna/>
         </Switch>
       </Layout>
     </Router>
