@@ -5,6 +5,9 @@ import { Header } from './Header';
 
 import { ArrayHoroscope } from '../../shared/constant/ConstantHoroscope';
 
+import HoroscopoInfo from '../../components/Horoscopo/HoroscopoInfo';
+import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
+
 export const PageZodiac = () => {
   console.log(ArrayHoroscope);
   return (
@@ -15,6 +18,8 @@ export const PageZodiac = () => {
           <Sign key={i} title={h.title} linkRoute={h.image} />
         ))}
       </div>
+      <HoroscopoInfo />
+      <HoroscopoYear />
     </>
   );
 };

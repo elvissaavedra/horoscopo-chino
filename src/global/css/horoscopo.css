@@ -1,0 +1,35 @@
+.wrapper-anchor{
+    display:inline;
+    margin: 0;
+}
+.horoscopo-container{
+    width: 70%;
+    margin: auto;
+}
+.horoscopo-container h2{
+    text-align: center;
+}
+.content-background{
+    background-color: #d5d6d8;
+    width: 80%;
+}
+.container-horo-art img{
+    display: block;
+    margin-top: -55px;
+}
+.container-horo-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container-horo-art p{
+    width: 90%;
+    margin:auto;
+}
+.background-article{
+    background-color: #fff;
+    height: 55px;
+    margin-top: 2rem;
+}
