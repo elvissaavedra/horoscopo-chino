@@ -13,73 +13,67 @@ const Carouselhdr = () => {
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Caballo.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Cabra.png" title="Candidatos" height="60" width="60"/>
                                
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Cerdo.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Conejo.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Dragon.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Gallo.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Mono.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Perro.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\RATA.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\serpiente.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
                         <li>
                             <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
-                                
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" rel="noopener noreferrer" target="_blank">
-                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\BUEY.png" title="Candidatos" height="60" width="60"/>
+                                <img alt="Horoscopochino" src=".\imgeneshorscopochino\Tigre.png" title="Candidatos" height="60" width="60"/>
                                 
                             </a>
                         </li>
@@ -88,8 +82,6 @@ const Carouselhdr = () => {
             </div>
             <style jsx="true">{`
                 .Wrapper_boxsignos .wrapper_ul {
-                    border-top: 1px solid #e5e5e5;
-                    border-bottom: 1px solid #e5e5e5;
                     padding: 20px 0;
                     overflow-x: auto;
                     width: 100%;
@@ -103,9 +95,8 @@ const Carouselhdr = () => {
                     position: relative;
                 }
                 .Wrapper_boxsignos .wrapper_ul li {
-                    padding-left: 70px;
                     float: left;
-                    width: calc((100% / 7));
+                    width: calc((100% / 12));
                     position: relative;
                     min-height: 60px;
                 }

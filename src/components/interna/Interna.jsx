@@ -1,4 +1,6 @@
 import React from 'react';
+import Carouselhdr from '../carousel-header/Carouselhdr';
+
 
 const Interna = () => {
     return ( 
@@ -15,7 +17,7 @@ const Interna = () => {
                     </div>
                 </div>
                 <div className="Content-List-img">
-              
+                    <Carouselhdr/>
                 </div>
             </div>
             <div className="Content-body">

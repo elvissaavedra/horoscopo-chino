@@ -7,12 +7,14 @@ import { PageZodiac } from './pages/PageZodiac';
 import { Layout } from './components/Layout';
 import Interna from './components/interna/Interna';
 
+
 function App() {
   return (
     <Router>
       <Layout>
         <Switch>
           <Route path="/interna">
+            
             <Interna/>
           </Route>
           <Route exact path="/">
