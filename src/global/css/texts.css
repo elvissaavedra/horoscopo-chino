@@ -1,0 +1,102 @@
+@import './colors.css';
+@import './breakpoints.css';
+
+.headerTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--colorBlack);
+}
+.signTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--colorBlack);
+}
+.headerSubtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorBlack);
+}
+.textButton {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorWhite);
+}
+.bodyTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--colorBlack);
+}
+.bodyTitleSingle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--colorBlack);
+}
+.bodyText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorBlack);
+}
+.bodyTextOutstading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorCherryMain);
+}
+
+@media only screen and (min: var(--laptop)) {
+  .headerTitle {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .signTitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .headerSubtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .textButton {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .bodyTitle {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .bodyTitleSingle {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .bodyText {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .bodyTextOutstading {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
