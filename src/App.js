@@ -12,13 +12,15 @@ function App() {
     <Router>
       <Layout>
         <Switch>
+          <Route path="/interna">
+            <Interna/>
+          </Route>
           <Route exact path="/">
             <PageZodiac info={ArrayHoroscope} />
           </Route>
           {/* <Route path="/:id">
             <PageDetailsHoroscope info={notice} />
           </Route> */}
-          <Interna/>
         </Switch>
       </Layout>
     </Router>
