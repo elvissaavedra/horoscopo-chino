@@ -11,7 +11,7 @@ import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
 export const PageZodiac = () => {
   console.log(ArrayHoroscope);
   return (
-    <>
+    <div className="container">
       <Header />
       <div>
         {ArrayHoroscope.map((h, i) => (
@@ -20,7 +20,7 @@ export const PageZodiac = () => {
       </div>
       <HoroscopoInfo />
       <HoroscopoYear />
-    </>
+    </div>
   );
 };
 //

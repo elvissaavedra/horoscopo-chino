@@ -3,15 +3,15 @@
     margin: 0;
 }
 .horoscopo-container{
-    width: 70%;
+    max-width: 690px;
     margin: auto;
+    padding: 0 1.5rem;
 }
 .horoscopo-container h2{
     text-align: center;
 }
 .content-background{
     background-color: #d5d6d8;
-    width: 80%;
 }
 .container-horo-art img{
     display: block;
@@ -25,7 +25,6 @@
 
 }
 .container-horo-art p{
-    width: 90%;
     margin:auto;
 }
 .background-article{
