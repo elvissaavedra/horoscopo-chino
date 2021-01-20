@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 //Styles Global
 import './global/css/index.css';
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
