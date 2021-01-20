@@ -17,6 +17,7 @@ import HoroscopoYear from "../../components/Horoscopo/HoroscopoYear";
 export const PageZodiac = () => {
     const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
     let dataHoroscope = horoscopeChinesse?.map((sign) => {
+      console.log('data', horoscopeChinesse)
         return sign?.data?.map((zodiacSign) => {
             return zodiacSign?.fields?.map((item) => {
                 if (item.name != "image") {
