@@ -5,12 +5,18 @@ import { ArrayHoroscope } from './shared/constant/ConstantHoroscope';
 
 import { PageZodiac } from './pages/PageZodiac';
 import { Layout } from './components/Layout';
+import Interna from './pages/interna/Interna';
+
 
 function App() {
   return (
     <Router>
       <Layout>
         <Switch>
+          <Route path="/interna">
+            
+            <Interna/>
+          </Route>
           <Route exact path="/">
             <PageZodiac info={ArrayHoroscope} />
           </Route>
