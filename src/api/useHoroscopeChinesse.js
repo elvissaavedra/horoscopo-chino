@@ -9,7 +9,7 @@ function useHoroscopeChinesse() {
   );
   console.log(data);
   return {
-    horoscopeChinesse: data,
+    horoscopeChinesse: data?.data?.spotlight?.data,
     isLoading: !error && !data,
     isError: error,
   };
