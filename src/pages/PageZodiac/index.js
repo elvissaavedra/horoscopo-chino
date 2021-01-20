@@ -19,17 +19,13 @@ export const PageZodiac = () => {
     let dataHoroscope = horoscopeChinesse?.map((sign) => {
       console.log('data', horoscopeChinesse)
         return sign?.data?.map((zodiacSign) => {
-            return zodiacSign?.fields?.map((item) => {
-                if (item.name != "image") {
-                    return {
-                        label: item.name,
-                        value: item.value,
-                    };
-                }
-            });
+            return zodiacSign?.fields?.reduce((prev, current) => {
+                prev[current.name] = current.value;
+                return prev;
+            }, {});
         });
     });
-    console.log(dataHoroscope);
+    console.log("elementos", dataHoroscope);
     if (isLoading) return <Loading />;
 
     return (
