@@ -11,6 +11,9 @@ import { Header } from './Header';
 import { ArrayHoroscope } from '../../shared/constant/ConstantHoroscope';
 import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
 
+import HoroscopoInfo from '../../components/Horoscopo/HoroscopoInfo';
+import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
+
 export const PageZodiac = () => {
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
   console.log(ArrayHoroscope);
@@ -18,13 +21,15 @@ export const PageZodiac = () => {
   if (isLoading) return <Loading />;
 
   return (
-    <>
+    <div className="container">
       <Header />
       <Signs>
         {ArrayHoroscope && ArrayHoroscope.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} />)}
       </Signs>
       <SearchForm />
-    </>
+      <HoroscopoInfo />
+      <HoroscopoYear />
+    </div>
   );
 };
 //
