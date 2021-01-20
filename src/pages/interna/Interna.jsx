@@ -1,5 +1,5 @@
 import React from 'react';
-import Carouselhdr from '../carousel-header/Carouselhdr';
+import Carouselhdr from '../../components/carousel-header/Carouselhdr';
 
 
 const Interna = () => {

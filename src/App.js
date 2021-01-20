@@ -5,7 +5,7 @@ import { ArrayHoroscope } from './shared/constant/ConstantHoroscope';
 
 import { PageZodiac } from './pages/PageZodiac';
 import { Layout } from './components/Layout';
-import Interna from './components/interna/Interna';
+import Interna from './pages/interna/Interna';
 
 
 function App() {
