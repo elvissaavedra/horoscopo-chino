@@ -1,7 +1,7 @@
 import React from "react";
-import buey from '../../shared/images/Buey.png';
 
 const HoroscopoYear = () => {
+    const buey = '/images/Buey.png';
     return (
        <article className=" content-background">
            <div className="background-article"></div>
