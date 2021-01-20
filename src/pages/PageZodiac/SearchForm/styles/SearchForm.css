@@ -1,23 +1,28 @@
 .searchForm {
     font-family: Roboto;
     position: relative;
-    padding: 30px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: 0.8rem 0;
     gap: 30px;
     flex-wrap: wrap;
     background-color: #eee;
     width: 100%;
 }
+.searchForm__content {
+    padding: 15px;
+}
 .searchForm__description {
     flex: 2;
 }
-.searchForm__description h3 {
+.searchForm__description h5 {
+    display: block;
     margin: 0 0 23px;
 }
-.searchForm__description h4 {
-    margin: 0;
+.searchForm__description h5 {
+    margin-bottom: 0.5rem;
 }
 .searchForm__form {
     flex: 1;
@@ -47,4 +52,24 @@
 }
 .searchForm__form button:hover {
     background-color: #7a151c;
+}
+
+@media only screen and (min-width: 767px) {
+    .searchForm__content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .searchForm__description {
+        display: block;
+        text-align: left;
+    }
+    .searchForm__description h5 {
+        display: inline;
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+    .headerSubtitle {
+        display: inline;
+    }
 }
