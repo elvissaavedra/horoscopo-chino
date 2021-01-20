@@ -1,50 +1,50 @@
 export const ArrayHoroscope = [
   {
     title: 'RATA',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Rata.png',
   },
   {
     title: 'BUEY',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Buey.png',
   },
   {
     title: 'TIGRE',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Tigre.png',
   },
   {
     title: 'CONEJO',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Conejo.png',
   },
   {
     title: 'MONO',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Mono.png',
   },
   {
     title: 'CABRA',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Cabra.png',
   },
   {
     title: 'DRAGON',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Dragon.png',
   },
   {
     title: 'SERPIENTE',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Serpiente.png',
   },
   {
     title: 'CABALLO',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Caballo.png',
   },
   {
     title: 'GALLO',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Gallo.png',
   },
   {
     title: 'PERRO',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Perro.png',
   },
   {
     title: 'CERDO',
-    image: 'https://picsum.photos/seed/picsum/200/200',
+    image: '/images/Cerdo.png',
   },
 ];
