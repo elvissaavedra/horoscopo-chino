@@ -16,7 +16,7 @@ import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
 
 export const PageZodiac = () => {
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
-  console.log(ArrayHoroscope);
+  // console.log(ArrayHoroscope);
 
   if (isLoading) return <Loading />;
 
