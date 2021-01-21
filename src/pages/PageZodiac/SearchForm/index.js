@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './styles/SearchForm.css';
 import DatePicker from 'react-date-picker';
+
+import './style.css';
+
 const SearchForm = () => {
   const searchSign = (evt) => {
     evt.preventDefault();
@@ -16,7 +18,9 @@ const SearchForm = () => {
         </div>
         <form onSubmit={searchSign} className="searchForm__form">
           <DatePicker maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} />
-          <button type="submit">BUSCAR</button>
+          <button className="textButton" type="submit">
+            BUSCAR
+          </button>
         </form>
       </div>
     </div>

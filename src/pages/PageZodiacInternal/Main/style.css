@@ -9,6 +9,6 @@
   display: flex;
   flex-direction: column;
 }
-.zodiacMain__contentText span {
-  margin-bottom: 30px;
+.zodiacMain__contentText p {
+  margin-bottom: 0.5rem;
 }

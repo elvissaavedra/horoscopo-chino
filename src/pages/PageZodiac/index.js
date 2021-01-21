@@ -1,18 +1,19 @@
 import React from 'react';
-import './index.css';
 
-import { Loading } from '../../components/Loading/index';
+import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
+
+import { ArrayHoroscope } from '../../shared/constant/ConstantHoroscope';
+
 import { Signs } from './Signs';
 import { Sign } from './Sign';
 import { SearchForm } from './SearchForm';
-
+import { Loading } from '../../components/Loading/index';
+import HoroscopoInfo from './Horoscopo/HoroscopoInfo';
+import HoroscopoYear from './Horoscopo/HoroscopoYear';
 import { Header } from './Header';
+import { Button } from '../../global/components/Button';
 
-import { ArrayHoroscope } from '../../shared/constant/ConstantHoroscope';
-import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
-
-import HoroscopoInfo from '../../components/Horoscopo/HoroscopoInfo';
-import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
+import './index.css';
 
 export const PageZodiac = () => {
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
@@ -36,6 +37,7 @@ export const PageZodiac = () => {
       <SearchForm />
       <HoroscopoInfo />
       <HoroscopoYear />
+      <Button />
     </div>
   );
 };
