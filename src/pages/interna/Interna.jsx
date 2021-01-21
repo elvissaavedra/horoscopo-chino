@@ -1,11 +1,13 @@
 import React from 'react';
 import Carouselhdr from '../../components/carousel-header/Carouselhdr';
+import { SearchForm } from '../PageZodiac/SearchForm'
 
 
 const Interna = () => {
     return ( 
-        <>
+        <div className="container">
             <div className="Content-header">
+                <div className="background-article"></div>
                 <div className="Box-content-grey Container-center">
                     <div className="Content-img">
                         <img src=".\imgeneshorscopochino\RATA.png"/>
@@ -13,7 +15,7 @@ const Interna = () => {
                     <div className="Content-text">
                         <h1 className="Title">Rata</h1>
                         <span>Misteriosa, secreta, agresiva</span>
-                        <p>Descubre las carácteristicas de las más mágnetica horóscopo hino</p>
+                        <p>Descubre las carácteristicas de las más mágnetica del horóscopo chino</p>
                     </div>
                 </div>
                 <div className="Content-List-img">
@@ -33,9 +35,13 @@ const Interna = () => {
                     <p class="text"> En ambos sexos, la roedora crea dependencia emocional con su estilo de convivencia.</p> 
                     <p class="text"> Cuando está enamorada es abrumadora. Sabe tocar el punto G física y anímicamente, y seduce sin tregua. Es una gran compañera de la vida cotidiana y de viajes al exterior.</p> <p class="text"> Su memoria asombra; detallista, diseca situaciones y personas con agudeza y sentido del humor. Conoce las leyes y los códigos del barrio y del país y siempre se adelanta para sacar tajada en lo que pueda.</p>
                 </div>
-            </div>        
+            </div>      
+            <SearchForm />
             <style jsx="true">{`
-                    
+                .text{
+                    margin-bottom: .5rem;
+                    line-height: 20px;
+                }
                 .Content-header{
                     background: #f1f1f1;
                     text-align: center;
@@ -78,7 +84,7 @@ const Interna = () => {
                 }
             `}
         </style>
-        </>
+        </div>
 
      );
 }

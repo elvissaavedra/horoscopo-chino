@@ -83,7 +83,7 @@ const Carouselhdr = () => {
             <style jsx="true">{`
                 .Wrapper_boxsignos .wrapper_ul {
                     padding: 20px 0;
-                    overflow-x: auto;
+                    overflow-x: hidden;
                     width: 100%;
                 }
                 .Wrapper_boxsignos .wrapper_ul ul {
