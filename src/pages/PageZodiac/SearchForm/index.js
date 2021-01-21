@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import './styles/SearchForm.css';
 import DatePicker from 'react-date-picker';
+import moment from 'moment';
+import 'moment-lunar';
+
 const SearchForm = () => {
   const searchSign = (evt) => {
     evt.preventDefault();
+    console.log('fecha', evt.target.elements.date.value)
+    console.log('lunar', moment().year(1995).month(6).date(4).lunar().format('YYYY-MM-DD'));
+    console.log(moment(evt.target.elements.date.value).lunar().format("YYYY"));
   };
   const [value, onChange] = useState(new Date());
+  console.log('fecha', value)
 
   return (
     <div className="searchForm">
