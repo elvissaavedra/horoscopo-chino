@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/SearchForm.css";
+import "./style.css";
 import DatePicker from "react-date-picker";
 import moment from "moment";
 import "moment-lunar";
