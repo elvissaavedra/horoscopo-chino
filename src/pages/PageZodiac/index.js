@@ -11,8 +11,8 @@ import { Header } from './Header';
 import { ArrayHoroscope } from '../../shared/constant/ConstantHoroscope';
 import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
 
-import HoroscopoInfo from '../../components/Horoscopo/HoroscopoInfo';
-import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
+import HoroscopoInfo from './Horoscopo/HoroscopoInfo';
+import HoroscopoYear from './Horoscopo/HoroscopoYear';
 
 export const PageZodiac = () => {
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();

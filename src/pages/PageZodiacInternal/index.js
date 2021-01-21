@@ -7,11 +7,11 @@ import { Button } from './Button';
 
 export const PageZodiacInternal = () => {
   return (
-    <>
+    <div className="container">
       <Header />
       <Main />
       <SearchForm />
       <Button />
-    </>
+    </div>
   );
 };
