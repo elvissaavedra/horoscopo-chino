@@ -3,8 +3,8 @@ import React from "react";
 const HoroscopoInfo = () => (
   <section className="horoscopo-container">
     <h2 className="bodyTitle">¿Qué es el horóscopo Chino?</h2>
-    <div className="bodyText">
-      <p>
+    <div className="horoscopo-container-text">
+      <p className="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
         inventore consectetur dolore nulla non enim quos, quibusdam laudantium
         placeat totam aliquid, eos ipsa aspernatur ut sed neque et laboriosam
@@ -30,10 +30,9 @@ const HoroscopoInfo = () => (
         <a className="sign-link" href="#">Cabra</a>, {" "}
         <a className="sign-link" href="#">Mono</a>, {" "}
         <a className="sign-link" href="#">Gallo</a>, {" "}
-        <a className="sign-link" href="#">Perro</a>, {" "}
-        <a className="sign-link" href="#">Cerdo</a> {" "}
-        adipisicing elit. Eum nam quibusdam veritatis deserunt, ipsum
-        reiciendis!
+        <a className="sign-link" href="#">Perro</a> y {" "}
+        <a className="sign-link" href="#">Cerdo</a>. {" "}
+        Y cada uno de ellos posee un elemento que puede ser Metal, Aire, Fuego, Tierra y Agua. 
       </p>
     </div>
   </section>
