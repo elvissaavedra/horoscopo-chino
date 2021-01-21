@@ -15,9 +15,7 @@ import HoroscopoInfo from '../../components/Horoscopo/HoroscopoInfo';
 import HoroscopoYear from '../../components/Horoscopo/HoroscopoYear';
 
 export const PageZodiac = () => {
-  // console.log(ArrayHoroscope);
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
-  console.log(horoscopeChinesse);
   let dataHoroscope = horoscopeChinesse?.map((sign) => {
     return sign?.data?.map((zodiacSign) => {
       return zodiacSign?.fields?.reduce((prev, current) => {
@@ -26,7 +24,7 @@ export const PageZodiac = () => {
       }, {});
     });
   });
-  console.log('elementos', dataHoroscope);
+
   if (isLoading) return <Loading />;
 
   return (
@@ -41,4 +39,3 @@ export const PageZodiac = () => {
     </div>
   );
 };
-//

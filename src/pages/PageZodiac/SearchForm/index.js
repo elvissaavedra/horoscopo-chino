@@ -4,7 +4,6 @@ import DatePicker from 'react-date-picker';
 const SearchForm = () => {
   const searchSign = (evt) => {
     evt.preventDefault();
-    // console.log(evt.target.elements.date.value);
   };
   const [value, onChange] = useState(new Date());
 

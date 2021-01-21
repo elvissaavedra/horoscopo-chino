@@ -1,0 +1,36 @@
+.carousel__content {
+  padding: 30px 0;
+  overflow-x: auto;
+  width: 100%;
+}
+.carousel__list {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 70rem;
+  position: relative;
+  padding: 0 20px;
+}
+.carousel__item {
+  float: left;
+  width: calc((100% / 12));
+  position: relative;
+  min-height: 60px;
+}
+.carousel__item a {
+  display: block;
+  text-decoration: var(--colorBlack);
+  background-color: transparent;
+}
+.carousel__image {
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 60px;
+}
+@media only screen and (min-width: 1000px) {
+  .carousel__list {
+    width: 61rem;
+  }
+}

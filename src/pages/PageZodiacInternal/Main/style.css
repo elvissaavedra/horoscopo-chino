@@ -1,0 +1,14 @@
+.zodiacMain__content {
+  margin: 25px 10.5% 0px 10.5%;
+}
+.zodiacMain__content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.zodiacMain__contentText {
+  display: flex;
+  flex-direction: column;
+}
+.zodiacMain__contentText span {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,15 @@
+.zodiacHeader__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, var(--colorGrey) 0%, var(--colorGrey) 80%, white 20%, white 100%);
+}
+.zodiacHeader__image {
+  width: 108px;
+  height: 110px;
+  margin: 30px 0 20px;
+}
+.zodiacHeader__paragraph {
+  text-align: center;
+  margin-top: 20px;
+}

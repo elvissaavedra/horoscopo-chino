@@ -3,7 +3,6 @@ import React from 'react';
 import './index.css';
 
 export const Sign = ({ title, linkRoute }) => {
-  // console.log(linkRoute);
   return (
     <div className="sign__content">
       <img className="sign__image" src={linkRoute} alt={title} />

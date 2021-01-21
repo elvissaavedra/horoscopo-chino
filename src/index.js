@@ -5,12 +5,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 //SW
-// import * as serviceWorker from '';
 import reportWebVitals from './reportWebVitals';
 
 //Styles Global
 import './global/css/index.css';
-import './index.css'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
