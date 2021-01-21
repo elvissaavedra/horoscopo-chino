@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./style.css";
+
 import DatePicker from "react-date-picker";
 import moment from "moment";
 import "moment-lunar";
-const SearchForm = () => {
+const SearchForm = ({ data }) => {
     const searchSign = (evt) => {
         evt.preventDefault();
-        console.log(moment(evt.target.elements.date.value).lunar().format("YYYY"));
+        console.log(data);
+        let moonYear = moment(evt.target.elements.date.value).lunar().format("YYYY");
     };
     const [value, onChange] = useState(new Date());
 
