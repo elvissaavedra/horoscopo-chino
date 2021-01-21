@@ -25,7 +25,6 @@ export const PageZodiac = () => {
             ...ArrayHoroscope.find((sign) => zodiacSign.fields.find((item) => item.name == "url").value == sign.url),
         }))
     )[0];
-    console.log(dataHoroscope);
     if (isLoading) return <Loading />;
 
     return (
