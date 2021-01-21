@@ -5,20 +5,27 @@ import { ArrayHoroscope } from './shared/constant/ConstantHoroscope';
 
 import { PageZodiac } from './pages/PageZodiac';
 import { Layout } from './components/Layout';
+import Interna from './pages/interna/Interna';
+import Carouselhdr from './components/carousel-header/Carouselhdr';
 
 function App() {
   return (
     <Router>
-      <Layout>
+      <Carouselhdr />
+      {/* <Layout>
         <Switch>
+          <Route path="/interna">
+            
+            <Interna/>
+          </Route>
           <Route exact path="/">
             <PageZodiac info={ArrayHoroscope} />
-          </Route>
-          {/* <Route path="/:id">
+          </Route> */}
+      {/* <Route path="/:id">
             <PageDetailsHoroscope info={notice} />
           </Route> */}
-        </Switch>
-      </Layout>
+      {/* </Switch>
+      </Layout> */}
     </Router>
   );
 }
