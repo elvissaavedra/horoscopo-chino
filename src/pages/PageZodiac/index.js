@@ -31,9 +31,7 @@ export const PageZodiac = () => {
   return (
     <div className="container">
       <Header />
-      <Signs>
-        {ArrayHoroscope && ArrayHoroscope.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} />)}
-      </Signs>
+      <Signs>{ArrayHoroscope && ArrayHoroscope.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} />)}</Signs>
       <SearchForm />
       <HoroscopoInfo />
       <HoroscopoYear />

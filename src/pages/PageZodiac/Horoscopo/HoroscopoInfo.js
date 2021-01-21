@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './style.css';
 
 const HoroscopoInfo = () => (
@@ -17,51 +16,51 @@ const HoroscopoInfo = () => (
         quaerat consectetur earum, harum commodi esse incidunt distinctio.
       </p>
       <p>
-        Los signos del horóscopo chino son:{' '}
+        Los signos del horóscopo chino son:
         <a className="sign-link" href="#">
           Rata
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Búfalo
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Tigre
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Conejo
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Dragón
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Serpiente
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Caballo
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Cabra
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Mono
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Gallo
         </a>
-        ,{' '}
+        ,
         <a className="sign-link" href="#">
           Perro
         </a>{' '}
-        y{' '}
+        y
         <a className="sign-link" href="#">
           Cerdo
         </a>
