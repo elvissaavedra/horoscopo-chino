@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom';
 import { SearchForm } from '../PageZodiac/SearchForm';
 import { Main } from './Main';
 import { Header } from './Header';
-import { Button } from '../../global/components/Button';
 import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
 import { Loading } from "../../components/Loading/index";
+import { Button } from '../../shared/components/Button';
 
 export const PageZodiacInternal = () => {
   const { sign } = useParams();

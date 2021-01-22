@@ -1,0 +1,35 @@
+.zodiacFooter__content {
+  text-align: center;
+}
+.zodiacFooter__button {
+  text-align: center;
+  padding: 20px 17px;
+  background-color: var(--colorGreyButton);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* ooo; */
+  font-size: 13px;
+  color: #fff;
+  background-color: var(--colorGreyButton);
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  font-weight: bold;
+  position: absolute;
+  width: 180px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  /* top: -65px; */
+}
+@media only screen and (max-width: 1000px) {
+  .zodiacFooter__content {
+    display: none;
+    /* oooo; */
+    top: -25px;
+  }
+}
