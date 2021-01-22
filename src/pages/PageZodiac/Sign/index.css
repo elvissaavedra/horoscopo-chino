@@ -1,6 +1,9 @@
 .sign__content {
   margin: 0px auto;
 }
+.sign__content a {
+  text-decoration: none;
+}
 .sign__image {
   width: 83px;
   height: 85px;

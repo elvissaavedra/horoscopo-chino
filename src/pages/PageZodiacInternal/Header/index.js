@@ -15,12 +15,12 @@ export const Header = (props) => {
 
   return (
     <div className="zodiacHeader__content">
-      <img src={`/images/${titleSign}.png`} alt="Rata" className="zodiacHeader__image" />
+      <img src={`/images/${titleSign}.png`} alt={titleSign} className="zodiacHeader__image" />
       <h2 className="bodyTitle">{titleSign}</h2>
       <p className="zodiacHeader__paragraph">
         <span className="zodiacHeader__text bodyText">Misteriosa, secreta, agresiva.</span>
       </p>
-      <p className="zodiacHeader__paragraph">
+      <p className="zodia cHeader__paragraph">
         <span className="zodiacHeader__text bodyText">
           Descubre las características de la más magnética horóscopo chino.
         </span>
