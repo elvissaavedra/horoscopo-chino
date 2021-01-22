@@ -18,7 +18,7 @@ export const PageZodiacInternal = () => {
   return (
     <div className="container">
       <Header />
-      <Main />
+      <Main data={horoscopeChinesse} sign={sign} />
       <SearchForm />
       <Button />
     </div>

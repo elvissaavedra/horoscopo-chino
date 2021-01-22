@@ -2,11 +2,15 @@ import React from 'react';
 
 import './style.css';
 
-export const Main = () => {
+export const Main = ({ data, sign }) => {
+  const itemSign = data.filter((item) => item.url === sign)
+  
   return (
     <div className="zodiacMain__content">
-      <h1 className="bodyTitle">Características de la rata en el horóscopo chino</h1>
-      <div className="zodiacMain__contentText">
+      {console.log('item', itemSign)}
+      {itemSign?.map((sign) => (
+        <div className="zodiacMain__contentText">
+        <h1 className="bodyTitle">Características de {sign.header} en el horóscopo chino</h1>
         <p className="bodyText">
           La rata se infiltra en el corazón y el pensamiento: es el signo que más capacidad tiene para «hacerte el bocho» desde el primer instante que
           se cruza contigo. No hay escapatoria.
@@ -36,6 +40,8 @@ export const Main = () => {
           del país y siempre se adelanta para sacar tajada en lo que pueda.
         </p>
       </div>
+      ))}
+      
     </div>
   );
 };
