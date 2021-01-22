@@ -2,40 +2,48 @@ import React from 'react';
 
 import './style.css';
 
-export const Main = () => {
+export const Main = ({ data, sign }) => {
+  const itemSign = data.filter((item) => item.url === sign)
+  
   return (
     <div className="zodiacMain__content">
-      <h1 className="bodyTitle">Características de la rata en el horóscopo chino</h1>
-      <div className="zodiacMain__contentText">
+      {itemSign?.map((sign, i) => (
+        <div key={i} className="zodiacMain__contentText">
+        <h1 className="bodyTitle">Características de {sign.header} en el horóscopo chino</h1>
         <p className="bodyText">
-          La rata se infiltra en el corazón y el pensamiento: es el signo que más capacidad tiene para «hacerte el bocho» desde el primer instante que
-          se cruza contigo. No hay escapatoria.
+          {sign.description}
         </p>
-        <p className="bodyText">Una rata que nace con amor, cuidado y educación podrá destacarse en la sociedad.</p>
+        <h4 className="headerSubtitle">¿Cómo es el {sign.header} en el horóscopo chino?</h4>
+        <p className="bodyText">{sign.howIs}</p>
+        <h4 className="headerSubtitle">Personalidad del {sign.header}</h4>
         <p className="bodyText">
-          La rata tiene un sex appeal que es marca registrada. Su caudal emocional, creativo y humano la convierte en un ser único e irremplazable.
+          {sign.personality}
         </p>
+        <h4 className="headerSubtitle">Años de nacimiento del {sign.header}</h4>
         <p className="bodyText">
-          Es solitaria, sabe atravesar las pruebas que se le presentan, administrando con precisión su porvenir y condimentándolo con sentido del
-          humor, creatividad y solvencia.
+          {sign.yearsOfBirth}
         </p>
+        <h4 className="headerSubtitle">Predicciones del {sign.header}</h4>
         <p className="bodyText">
-          La rata es ciclotímica: desde muy joven deberá tener contención, amigos, y especialistas que puedan decodificar su psiquis para no
-          estancarse y evolucionar en su vocación. Se reinventará en la vida mil veces; tanto como quiera y pueda.
-        </p>
-        <p className="bodyText">
-          Hogareña, cariñosa con hijos, nietos, hermanos y amigos, es una persona necesaria para pedirle consejos, ayuda, o su tiempo.
-        </p>
-        <p className="bodyText">En ambos sexos, la roedora crea dependencia emocional con su estilo de convivencia.</p>
-        <p className="bodyText">
-          Cuando está enamorada es abrumadora. Sabe tocar el punto G física y anímicamente, y seduce sin tregua. Es una gran compañera de la vida
-          cotidiana y de viajes al exterior.
+          Amor: {sign.predictions.love}
         </p>
         <p className="bodyText">
-          Su memoria asombra; detallista, diseca situaciones y personas con agudeza y sentido del humor. Conoce las leyes y los códigos del barrio y
-          del país y siempre se adelanta para sacar tajada en lo que pueda.
+          Dinero: {sign.predictions.money}
         </p>
+        <p className="bodyText">Salud: {sign.predictions.health}</p>
+        <h4 className="headerSubtitle">Colores de la suerte del {sign.header}</h4>
+        <p className="bodyText">
+          {sign.luckyColors}
+        </p>
+        <h4 className="headerSubtitle">Números de la suerte del {sign.header}</h4>
+        <p className="bodyText">
+          {sign.luckyNumbers}
+        </p>
+        <h4 className="headerSubtitle">¿Qué significa el {sign.header}?</h4>
+        <p className="bodyText">{sign.whatItMeans}</p>
       </div>
+      ))}
+      
     </div>
   );
 };

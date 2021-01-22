@@ -17,24 +17,15 @@ import './index.css';
 
 export const PageZodiac = () => {
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
-  let dataHoroscope = horoscopeChinesse?.map((sign) =>
-    sign?.data?.map((zodiacSign) => ({
-      ...zodiacSign?.fields?.reduce((prev, current) => {
-        prev[current.name] = current.value;
-        return prev;
-      }, {}),
-      ...ArrayHoroscope.find((sign) => zodiacSign.fields.find((item) => item.name == 'url').value == sign.url),
-    }))
-  )[0];
   if (isLoading) return <Loading />;
 
   return (
     <div className="container">
       <Header />
       <Signs>
-        {dataHoroscope && dataHoroscope.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} />)}
+        {horoscopeChinesse && horoscopeChinesse.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} url={h.url} />)}
       </Signs>
-      <SearchForm />
+      <SearchForm data={horoscopeChinesse} />
       <HoroscopoInfo />
       <HoroscopoYear />
     </div>
