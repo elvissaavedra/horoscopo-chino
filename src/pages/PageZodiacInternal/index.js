@@ -1,24 +1,24 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
 
-import { SearchForm } from '../PageZodiac/SearchForm';
-import { Main } from './Main';
-import { Header } from './Header';
-import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
+import { SearchForm } from "../PageZodiac/SearchForm";
+import { Main } from "./Main";
+import { Header } from "./Header";
+import useHoroscopeChinesse from "../../api/useHoroscopeChinesse";
 import { Loading } from "../../components/Loading/index";
-import { Button } from '../../shared/components/Button';
+import { Button } from "../../shared/components/Button";
 
 export const PageZodiacInternal = () => {
-  const { sign } = useParams();
-  const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
+    const { sign } = useParams();
+    const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
     if (isLoading) return <Loading />;
-  
-  return (
-    <div className="container">
-      <Header data={horoscopeChinesse} sign={sign} />
-      <Main data={horoscopeChinesse} sign={sign} />
-      <SearchForm />
-      <Button />
-    </div>
-  );
+
+    return (
+        <div className="container">
+            <Header data={horoscopeChinesse} sign={sign} />
+            <Main data={horoscopeChinesse} sign={sign} />
+            <SearchForm data={horoscopeChinesse} />
+            <Button />
+        </div>
+    );
 };
