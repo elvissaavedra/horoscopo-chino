@@ -11,7 +11,7 @@ const HoroscopoInfo = () => (
       <p>
       El horóscopo chino, al igual que en la astrología occidental, se basa en las fechas de nacimiento para establecer diferentes características de personalidad. No obstante, si uno quisiera tener una carta natal completa es necesario conocer la hora y el lugar de nacimiento.
       </p>
-      <h3 className="">¿Cuál es el origen del horóscopo chino?</h3>
+      <h3 className="headerSubtitle">¿Cuál es el origen del horóscopo chino?</h3>
       <p>
       Una leyenda muy popular explica el origen del Horóscopo Chino. El Emperador de Jade, gobernante del cielo según la mitología china, organizó una carrera de animales para definir quiénes de ellos formarían parte del zodiaco. Las posiciones serían ocupadas por aquellos que lograron cruzar un río y el orden en que llegaron a la meta.
       </p>

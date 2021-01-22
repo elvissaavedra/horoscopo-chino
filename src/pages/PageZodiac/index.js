@@ -17,6 +17,7 @@ export const PageZodiac = () => {
     const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
     let dataHoroscope = horoscopeChinesse;
     if (isLoading) return <Loading />;
+    console.log("🚀home", horoscopeChinesse)
 
     return (
         <div className="container">
