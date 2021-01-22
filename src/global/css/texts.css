@@ -17,14 +17,6 @@
   line-height: 14px;
   color: var(--colorBlack);
 }
-.headerSubtitle {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--colorBlack);
-}
 .textButton {
   font-family: Roboto;
   font-style: normal;
@@ -32,6 +24,14 @@
   font-size: 14px;
   line-height: 16px;
   color: var(--colorWhite);
+}
+.headerSubtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorBlack);
 }
 .bodyTitle {
   font-family: Roboto;
@@ -76,10 +76,6 @@
     line-height: 18px;
   }
   .headerSubtitle {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .textButton {
     font-size: 14px;
     line-height: 16px;
   }

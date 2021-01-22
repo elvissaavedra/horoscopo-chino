@@ -1,41 +1,40 @@
-import React from 'react';
-import './index.css';
+import React from "react";
 
-import { Loading } from '../../components/Loading/index';
-import { Signs } from './Signs';
-import { Sign } from './Sign';
-import { SearchForm } from './SearchForm';
+import useHoroscopeChinesse from "../../api/useHoroscopeChinesse";
 
-import { Header } from './Header';
+import { ArrayHoroscope } from "../../shared/constant/ConstantHoroscope";
 
-import { ArrayHoroscope } from '../../shared/constant/ConstantHoroscope';
-import useHoroscopeChinesse from '../../api/useHoroscopeChinesse';
+import { Signs } from "./Signs";
+import { Sign } from "./Sign";
+import { SearchForm } from "./SearchForm";
+import { Loading } from "../../components/Loading/index";
+import HoroscopoInfo from "./Horoscopo/HoroscopoInfo";
+import HoroscopoYear from "./Horoscopo/HoroscopoYear";
+import { Header } from "./Header";
+import { Button } from "../../global/components/Button";
 
-import HoroscopoInfo from './Horoscopo/HoroscopoInfo';
-import HoroscopoYear from './Horoscopo/HoroscopoYear';
+import "./index.css";
 
 export const PageZodiac = () => {
-  const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
-  let dataHoroscope = horoscopeChinesse?.map((sign) => {
-    return sign?.data?.map((zodiacSign) => {
-      return zodiacSign?.fields?.reduce((prev, current) => {
-        prev[current.name] = current.value;
-        return prev;
-      }, {});
-    });
-  });
+    const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
+    let dataHoroscope = horoscopeChinesse?.map((sign) =>
+        sign?.data?.map((zodiacSign) => ({
+            ...zodiacSign?.fields?.reduce((prev, current) => {
+                prev[current.name] = current.value;
+                return prev;
+            }, {}),
+            ...ArrayHoroscope.find((sign) => zodiacSign.fields.find((item) => item.name == "url").value == sign.url),
+        }))
+    )[0];
+    if (isLoading) return <Loading />;
 
-  if (isLoading) return <Loading />;
-
-  return (
-    <div className="container">
-      <Header />
-      <Signs>
-        {ArrayHoroscope && ArrayHoroscope.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} />)}
-      </Signs>
-      <SearchForm />
-      <HoroscopoInfo />
-      <HoroscopoYear />
-    </div>
-  );
+    return (
+        <div className="container">
+            <Header />
+            <Signs>{dataHoroscope && dataHoroscope.map((h, i) => <Sign key={i} title={h.title} linkRoute={h.image} />)}</Signs>
+            <SearchForm />
+            <HoroscopoInfo />
+            <HoroscopoYear />
+        </div>
+    );
 };

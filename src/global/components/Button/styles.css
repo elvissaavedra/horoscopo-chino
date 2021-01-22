@@ -1,5 +1,6 @@
 .zodiacFooter__button {
   text-align: center;
+  margin: 43px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
