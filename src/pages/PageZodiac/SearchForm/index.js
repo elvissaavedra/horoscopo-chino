@@ -7,8 +7,12 @@ import "moment-lunar";
 const SearchForm = ({ data }) => {
     const searchSign = (evt) => {
         evt.preventDefault();
-        console.log(data);
-        let moonYear = moment(evt.target.elements.date.value).lunar().format("YYYY");
+        let moonYear = Number(moment(evt.target.elements.date.value).lunar().format("YYYY"));
+        console.log(
+            data.find((sign) => {
+                return (moonYear - sign.year) % 12 === 0;
+            })
+        );
     };
     const [value, onChange] = useState(new Date());
 
