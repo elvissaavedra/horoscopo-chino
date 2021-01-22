@@ -11,11 +11,11 @@ const HoroscopoInfo = () => (
       <p>
       El horóscopo chino, al igual que en la astrología occidental, se basa en las fechas de nacimiento para establecer diferentes características de personalidad. No obstante, si uno quisiera tener una carta natal completa es necesario conocer la hora y el lugar de nacimiento.
       </p>
-      <h3 className="headerSubtitle">¿Cuál es el origen del horóscopo chino?</h3>
+      <h3 className="bodySubtitle">¿Cuál es el origen del horóscopo chino?</h3>
       <p>
       Una leyenda muy popular explica el origen del Horóscopo Chino. El Emperador de Jade, gobernante del cielo según la mitología china, organizó una carrera de animales para definir quiénes de ellos formarían parte del zodiaco. Las posiciones serían ocupadas por aquellos que lograron cruzar un río y el orden en que llegaron a la meta.
       </p>
-      <h3>¿Cómo saber qué animal soy en el horóscopo chino?</h3>
+      <h3 className="bodySubtitle">¿Cómo saber qué animal soy en el horóscopo chino?</h3>
       <p>
       Para saber el signo de una persona en el Horóscopo Chino basta con identificar su año de nacimiento:
       </p>
@@ -31,7 +31,7 @@ const HoroscopoInfo = () => (
       <p>GALLO - Años: 1909, 1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017, 2029.</p>
       <p>PERRO - Años: 1910, 1922, 1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018, 2030.</p>
       <p>CERDO - Años: 1911, 1923, 1935, 1947, 1971, 1983, 1995, 2007, 2019, 2031.</p>
-      <h3>¿Cuáles son los elementos del horóscopo chino?</h3>
+      <h3 className="bodySubtitle">¿Cuáles son los elementos del horóscopo chino?</h3>
       <p>Metal: años terminados en 0 o 1.</p>
       <p>Agua: años terminados en 2 o 3.</p>
       <p>Madera: años terminados en 4 o 5.</p>
