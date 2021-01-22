@@ -12,12 +12,10 @@ export const PageZodiacInternal = () => {
   const { sign } = useParams();
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
     if (isLoading) return <Loading />;
-    console.log("🚀interna", horoscopeChinesse)
-  console.log("🚀 ~ file: index.js ~ line 10 ~ PageZodiacInternal ~ sign", sign)
   
   return (
     <div className="container">
-      <Header />
+      <Header data={horoscopeChinesse} sign={sign} />
       <Main data={horoscopeChinesse} sign={sign} />
       <SearchForm />
       <Button />

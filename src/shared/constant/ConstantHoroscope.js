@@ -153,7 +153,7 @@ export const ArrayHoroscope = [
         personality: "Uno de los rasgos del caballo, séptimo animal del horóscopo chino, es el buen sentido del humor. Sin embargo, tiende a perder esta virtud con el paso de los años.",
         yearsOfBirth: "Las personas nacidas en los años 1918, 1930, 1942, 1954, 1966, 1978, 1990, 2002, 2014 y 2026 se rigen bajo el caballo, según el horóscopo chino.",
         predictions: {
-            love: "Amor: Tendrán un Año del Buey de Metal con insipidez en las relaciones y decepciones sentimentales; sin embargo, podrán volverse selectivos y ganar confianza en ello.",
+            love: "Tendrán un Año del Buey de Metal con insipidez en las relaciones y decepciones sentimentales; sin embargo, podrán volverse selectivos y ganar confianza en ello.",
             money: "La billetera de los del signo del caballo deberá estar llena en la segunda mitad del. Aun así, se recomienda tomar ciertas precauciones.",
             health: "Deben prestar atención a los oídos y a la zona otorrinolaringológica. Además de mantener un volumen adecuado."
         },
