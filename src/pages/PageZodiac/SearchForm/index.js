@@ -20,9 +20,7 @@ const SearchForm = () => {
         </div>
         <form onSubmit={searchSign} className="searchForm__form">
           <DatePicker maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} />
-          <button className="textButton" type="submit">
-            BUSCAR
-          </button>
+          <button type="submit">BUSCAR</button>
         </form>
       </div>
     </div>
