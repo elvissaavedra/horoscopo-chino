@@ -151,68 +151,68 @@ export const ArrayHoroscope = [
         description: "Estamos en el 2021, un periodo que traerá novedades significativas a los 12 signos del horóscopo chino. Si naciste bajo la influencia del caballo, revisa aquí las predicciones para este Año del Buey de Metal en salud, dinero, amor y trabajo. También conoce los números y colores que te traerán suerte durante todos estos meses.",
         howIs: "En el zodíaco chino, el caballo es un animal caracterizado por ser aventurero y siempre estar lleno de energía. Es muy amistoso y gusta de los viajes, experiencias en las que ama conocer gente nueva.",
         personality: "Uno de los rasgos del caballo, séptimo animal del horóscopo chino, es el buen sentido del humor. Sin embargo, tiende a perder esta virtud con el paso de los años.",
-        yearsOfBirth: "",
+        yearsOfBirth: "Las personas nacidas en los años 1918, 1930, 1942, 1954, 1966, 1978, 1990, 2002, 2014 y 2026 se rigen bajo el caballo, según el horóscopo chino.",
         predictions: {
-            love: "",
-            money: "",
-            health: ""
+            love: "Tendrán un Año del Buey de Metal con insipidez en las relaciones y decepciones sentimentales; sin embargo, podrán volverse selectivos y ganar confianza en ello.",
+            money: "La billetera de los del signo del caballo deberá estar llena en la segunda mitad del. Aun así, se recomienda tomar ciertas precauciones.",
+            health: "Deben prestar atención a los oídos y a la zona otorrinolaringológica. Además de mantener un volumen adecuado."
         },
-        luckyColors: "",
-        luckyNumbers: "",
-        whatItMeans: ""
+        luckyColors: "Para este Año del Buey de Metal, los colores de la suerte para el signo del caballo son el verde prado, el azul cerúleo y el naranja zanahoria.",
+        luckyNumbers: "Son el 3, 7 y 11.",
+        whatItMeans: "En la cultura china, el caballo representa el amor, la tenacidad, la devoción y la estabilidad. También ejemplifica la competencia, los santos y el talento."
     },
     {
         title: "GALLO",
         image: "/images/Gallo.png",
         url: "gallo",
         year: 1909,
-        description: "",
-        howIs: "",
-        personality: "",
-        yearsOfBirth: "",
+        description: "El año del Buey comienza el 12 de febrero y trae muchas novedades y desafíos para los 12 signos del horóscopo chino. En el caso del gallo, se beneficiará con una mayor lucidez para tomar decisiones importantes que aseguran su futuro y tranquilidad.",
+        howIs: "El décimo signo del zodiaco del horóscopo chino se caracteriza por su alegría y elegancia. Su personalidad radiante y segura no pasa de ser percibida. Pueden resultar encantadores o ser odiados, pero no dejan a las personas indiferentes.",
+        personality: "Las personas de este signo son alegres, honestas, leales y observadoras. Tienen mucha vitalidad, aunque a veces pueden lastimar con sus palabras.",
+        yearsOfBirth: "Los gallos nacieron en los siguientes años: 1909, 1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017 y 2029.",
         predictions: {
-            love: "",
-            money: "",
-            health: ""
+            love: "Los gallos que estén solteros tendrán un año positivo con oportunidades de encuentros románticos. Deben dejar de esperar que antiguos pretendientes regresen.",
+            money: "El gallo disfrutará de un equilibrio financiero, una remoción en el trabajo o un ingreso inesperado fortalecerán su economía.",
+            health: "El gallo deberá cuidarse de hacer esfuerzos físicos prolongados, es preferible que reciba ayuda de otros si necesita realizar un trabajo pesado. "
         },
-        luckyColors: "",
-        luckyNumbers: "",
-        whatItMeans: ""
+        luckyColors: "Los colores de la suerte para los gallos son verde militar, azul, mineral y gris lino.",
+        luckyNumbers: "Su número de la suerte en este nuevo año es el 5.",
+        whatItMeans: "En la cultura tradicional china, el gallo representa la honestidad y puntualidad. También se lo relaciona con la valentía y la competitividad."
     },
     {
         title: "PERRO",
         url: "perro",
         image: "/images/Perro.png",
         year: 1910,
-        description: "",
-        howIs: "",
-        personality: "",
-        yearsOfBirth: "",
+        description: "El Año del Buey trae nuevos retos para el signo del perro, ya que ellos deberán sacar lecciones positivas y negativas de actitudes pasadas. Además, es importante que no realicen cambios radicales en su vida a fin de que puedan mantener el equilibro.",
+        howIs: "Las personas de este signo son muy trabajadoras, leales y justas. Poseen una gran personalidad que llama la atención de su entorno, junto a un buen sentido del humor.",
+        personality: "El Perro es honesto, juguetón y bondadoso. Detesta las injusticias y siempre está dispuesto a ayudar a los que lo necesitan. No le gustan las cosas extravagantes y valora mucho la amistad y la fidelidad.",
+        yearsOfBirth: "Los que nacieron en 1910, 1922, 1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018 y 2030 están regidos bajo el perro.",
         predictions: {
-            love: "",
-            money: "",
-            health: ""
+            love: "Las personas de este signo que estén solteras tendrán que estar atentas y diferenciar entre quienes desean encuentros sin compromisos y los que quieren tener pareja a largo plazo.",
+            money: "El perro. Podrá conseguir un ascenso, ganar un premio u obtener ganancias a partir de una inversión inteligente.",
+            health: "En el nuevo año, este signo deberá modificar su estilo de vida. Evitar el sedentarismo y hacer más ejercicios o practicar yoga."
         },
-        luckyColors: "",
-        luckyNumbers: "",
-        whatItMeans: ""
+        luckyColors: "Los colores de la suerte para el perro en el Año del Buey serán naranja mandarina, amarillo limón y gris perla.",
+        luckyNumbers: "Los números de la suerte de este signo serán 3, 4 y 9.",
+        whatItMeans: "El perro simboliza la fidelidad y la felicidad. Este animal del horóscopo chino también representa la protección y la pureza."
     },
     {
         title: "CERDO",
         image: "/images/Cerdo.png",
         url: "cerdo",
         year: 1911,
-        description: "",
-        howIs: "",
-        personality: "",
-        yearsOfBirth: "",
+        description: "El Año del Buey de metal ya arrancó, y en esta nota conocerás todas las predicciones del signo del cerdo en el amor, dinero y salud. Si estás representado por este animal, desde aquí conocerás cómo te irá en este 2021.",
+        howIs: "El cerdo en el horóscopo chino es fiel en la amistad, elegante, perfeccionista y trabajador. Este animal tiene un marcado gusto por la moda y siempre está dispuesto a gastar para satisfacer su necesidad de complacer y disfrutar la vida.",
+        personality: "Aquellas personas identificadas con este signo son honestas, amables y pacientes. Es así que una persona con el signo del cerdo en el horóscopo chino será una gran amistad para toda la vida.",
+        yearsOfBirth: "Los que nacieron en 1923, 1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019 y 2031 están regidos bajo el cerdo.",
         predictions: {
-            love: "",
-            money: "",
-            health: ""
+            love: "Para las personas solteras, el horóscopo chino presagia un año oscilante pero dinámico, marcado por el deseo de proteger los sentimientos.",
+            money: "Para este año, las predicciones sobre el dinero del cerdo presagian recuperación y oportunidades.",
+            health: "El Horóscopo chino 2021 del cerdo aconseja al último signo zodiacal que controle su nivel de colesterol y el nivel de azúcar en la sangre."
         },
-        luckyColors: "",
-        luckyNumbers: "",
-        whatItMeans: ""
+        luckyColors: "Para el año del Buey de metal, el color azul es sinónimo de buena fortuna. Además, están los colores rosado brillante, gris y amarillo claro.",
+        luckyNumbers: "4, 8 y 12.",
+        whatItMeans: "En la cultura china, el cerdo está relacionado con la fertilidad y virilidad. Las personas que nacen bajo este signo del zodiaco chino son consideradas muy afortunadas, felices y honradas durante su vida."
     },
 ];

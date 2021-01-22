@@ -13,15 +13,12 @@ function App() {
       {/* <Carouselhdr /> */}
       <Layout>
         <Switch>
-          <Route path="/interna">
-            <PageZodiacInternal />
-          </Route>
           <Route exact path="/">
             <PageZodiac info={ArrayHoroscope} />
           </Route>
-          {/* <Route path="/:id">
-            <PageDetailsHoroscope info={notice} />
-          </Route> */}
+          <Route path="/horoscopo-:sign">
+            <PageZodiacInternal />
+          </Route>
         </Switch>
       </Layout>
     </Router>

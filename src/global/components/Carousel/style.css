@@ -9,6 +9,9 @@
   width: 70rem;
   position: relative;
   padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .carousel__item {
   float: left;
@@ -30,7 +33,10 @@
   height: 60px;
 }
 @media only screen and (min-width: 1000px) {
+  .carousel__content {
+    overflow-x: hidden;
+  }
   .carousel__list {
-    width: 61rem;
+    width: 57.5rem;
   }
 }
