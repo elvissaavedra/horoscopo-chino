@@ -6,12 +6,9 @@ import { Carousel } from '../../../global/components/Carousel';
 
 import './style.css';
 
-export const Header = (props) => {
-  const { data, setData } = useState([]);
-  const dataHeader = props.data;
-  const sign = props.sign;
-  const itemSign = dataHeader.filter((item) => item.url === sign);
-  const titleSign = itemSign.map(key => key.header)
+export const Header = ({ data, sign }) => {
+  const itemSign = data.filter((item) => item.url === sign);
+  const titleSign = itemSign.map(ele => ele.header)
 
   return (
     <div className="zodiacHeader__content">

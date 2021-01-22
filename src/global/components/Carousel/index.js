@@ -10,7 +10,7 @@ export const Carousel = ({ arrayItemCarousel }) => {
           arrayItemCarousel.map((item, index) => {
             return (
               <li className="carousel__item" key={'list' + index}>
-                <a>
+                <a href={`horoscopo-${item.url}`}>
                   <img src={item.image} alt={item.title} className="carousel__image" />
                 </a>
               </li>
