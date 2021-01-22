@@ -25,6 +25,7 @@ export const PageZodiac = () => {
             <SearchForm data={dataHoroscope} />
             <HoroscopoInfo />
             <HoroscopoYear />
+            <Button />
         </div>
     );
 };

@@ -7,7 +7,6 @@
     max-width: 690px;
     margin: auto;
     padding:  1.5rem;
-
 }
 .horoscopo-container h2{
     text-align: center;
@@ -15,6 +14,14 @@
 }
 .horoscopo-container-text p{
     line-height: 20px;
+    margin-bottom: .5rem;
+}
+.horoscopo-container-text h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: .6rem;
     margin-bottom: .5rem;
 }
 .content-background{
