@@ -41,6 +41,14 @@
   line-height: 26px;
   color: var(--colorBlack);
 }
+.bodySubtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--colorBlack);
+}
 .bodyTitleSingle {
   font-family: Roboto;
   font-style: normal;
