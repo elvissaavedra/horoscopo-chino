@@ -12,7 +12,7 @@ const HoroscopoYear = () => {
           <h2 className="bodyTitleSingle">
             2021: Año del <b className="bodyTitle">Buey del Metal</b>
           </h2>
-          <p className="">
+          <p className="bodyText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam esse vitae at numquam cumque, eveniet
             deleniti doloremque minima corporis totam eos accusamus possimus mollitia, dolorem tempore aliquid hic ut
             nemo consectetur quidem itaque dolores ex repellat. Reprehenderit quibusdam voluptate quo enim quae harum
