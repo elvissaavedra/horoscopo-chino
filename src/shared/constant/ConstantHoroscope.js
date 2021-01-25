@@ -318,26 +318,3 @@ export const ArrayHoroscope = [
       'En la cultura china, el cerdo está relacionado con la fertilidad y virilidad. Las personas que nacen bajo este signo del zodiaco chino son consideradas muy afortunadas, felices y honradas durante su vida.',
   },
 ];
-
-export const ArrayTypeHoroscope = [
-  {
-    type: 'Metal',
-    numberType: [0, 1],
-  },
-  {
-    type: 'Agua',
-    numberType: [2, 3],
-  },
-  {
-    type: 'Madera',
-    numberType: [4, 5],
-  },
-  {
-    type: 'Fuego',
-    numberType: [6, 7],
-  },
-  {
-    type: 'Tierra',
-    numberType: [8, 9],
-  },
-];

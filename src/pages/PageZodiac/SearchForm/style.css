@@ -49,9 +49,14 @@
 .searchForm__form button:hover {
   background-color: var(--colorCherryMainHover);
 }
-.searchForm__inputDate {
-  padding: 5px;
-  border: none;
+.react-date-picker__wrapper {
+  flex-direction: row-reverse;
+}
+.react-date-picker__clear-button {
+  display: none;
+}
+.searchForm__form button:hover {
+  background: #fff;
 }
 
 @media only screen and (min-width: 767px) {

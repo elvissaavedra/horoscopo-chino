@@ -1,42 +1,23 @@
 import React, { useState } from 'react';
-import moment from 'moment';
-
-import { ArrayHoroscope, ArrayTypeHoroscope } from '../../../shared/constant/ConstantHoroscope';
-
 import './style.css';
 
-let currentDay = moment().format('YYYY-MM-DD');
-
+import DatePicker from 'react-date-picker';
+import moment from 'moment';
+import 'moment-lunar';
+import { useHistory } from 'react-router-dom';
 const SearchForm = ({ data }) => {
-  const [inputDate, setInputDate] = useState(currentDay);
-
-  const handleInputChange = (e) => {
-    setInputDate(e.target.value);
-  };
-
+  let history = useHistory();
   const searchSign = (evt) => {
     evt.preventDefault();
-
-    let response,
-      responseType,
-      title,
-      typeName = null;
-
-    let yearSearch = parseInt(inputDate.substr(0, 4));
-    let digitFinalyearSearch = parseInt(inputDate.substr(3, 4));
-
-    ArrayHoroscope.forEach((object) => {
-      response = object.yearsCelebrated.some((years) => years === yearSearch + 1);
-      if (response) title = object.title;
+    let moonYear = Number(moment(evt.target.elements.date.value).lunar().format('YYYY'));
+    let dataFiltered = data?.find((sign) => {
+      return (moonYear - sign.year) % 12 === 0;
     });
-
-    ArrayTypeHoroscope.forEach((object) => {
-      responseType = object.numberType.some((digit) => digit === digitFinalyearSearch);
-      if (responseType) typeName = object.type;
-    });
-
-    console.log(data);
+    if (dataFiltered) {
+      history.push(`/horoscopo-${dataFiltered.url}`);
+    }
   };
+  const [value, onChange] = useState(new Date());
 
   return (
     <div className="searchForm">
@@ -46,15 +27,13 @@ const SearchForm = ({ data }) => {
           <h5 className="headerSubtitle">INGRESA TU FECHA DE NACIMIENTO:</h5>
         </div>
         <form onSubmit={searchSign} className="searchForm__form">
-          {/* <DatePicker maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} /> */}
-          <input
-            name="input_zodiac"
-            type="date"
-            className="searchForm__inputDate"
-            min="1900-01-01"
-            max="2031-31-12"
-            onChange={handleInputChange}
-            defaultValue={currentDay}
+          <DatePicker
+            format="dd / MM / yyy"
+            maxDate={new Date()}
+            className="date"
+            name="date"
+            onChange={onChange}
+            value={value}
           />
           <button type="submit">BUSCAR</button>
         </form>

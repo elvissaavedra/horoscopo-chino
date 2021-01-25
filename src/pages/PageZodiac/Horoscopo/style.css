@@ -1,44 +1,43 @@
-.sign-link{
-    color: #cc001b;
-    text-decoration: underline;
-    cursor: pointer;
+.sign-link {
+  color: #cc001b;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.horoscopo-container{
-    max-width: 690px;
-    margin: auto;
-    padding:  1.5rem;
+.horoscopo-container {
+  max-width: 690px;
+  margin: auto;
+  padding: 1.5rem;
 }
-.horoscopo-container h2{
-    text-align: center;
-    margin-bottom: 1rem;
+.horoscopo-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.horoscopo-container-text p{
-    line-height: 20px;
-    margin-bottom: .5rem;
+.horoscopo-container-text p {
+  line-height: 20px;
+  margin-bottom: 0.5rem;
 }
 .horoscopo-container-text h3 {
-    margin-top: .6rem;
-    margin-bottom: .5rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
 }
-.content-background{
-    background-color: #eee;
+.content-background {
+  background-color: #eee;
 }
-.container-horo-art img{
-    display: block;
-    margin-top: -55px;
+.container-horo-art img {
+  display: block;
+  margin-top: -55px;
 }
-.container-horo-art{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+.container-horo-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.container-horo-art p{
-    margin:auto;
+.container-horo-art p {
+  margin: auto;
 }
-.background-article{
-    background-color: #fff;
-    height: 55px;
-    margin-top: 2rem;
+.background-article {
+  background-color: #fff;
+  height: 55px;
+  margin-top: 2rem;
 }
