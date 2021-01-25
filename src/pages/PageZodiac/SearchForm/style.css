@@ -57,9 +57,10 @@
 .react-date-picker__clear-button {
     display: none;
 }
-.searchForm__form button:hover {
-    background: #fff;
+.react-date-picker__button:hover {
+    background: none !important;
 }
+
 @media only screen and (min-width: 767px) {
     .searchForm__content {
         display: flex;
