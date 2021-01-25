@@ -13,19 +13,19 @@ export const Main = ({ data, sign }) => {
         <p className="bodyText">
           {sign.description}
         </p>
-        <h4 className="headerSubtitle">¿Cómo es el {sign.header} en el horóscopo chino?</h4>
+        <h4 className="headerSubtitle">¿Cómo es este signo en el horóscopo chino?</h4>
         <p className="bodyText">{sign.howIs}</p>
-        <h4 className="headerSubtitle">Personalidad del {sign.header}</h4>
+        <h4 className="headerSubtitle">Personalidad: </h4>
         <p className="bodyText">
           {sign.personality}
         </p>
         <h4 className="headerSubtitle">Elemento fijo: </h4>
         <p className="bodyText">{sign.fixedElement}</p>
-        <h4 className="headerSubtitle">Años de nacimiento del {sign.header}</h4>
+        <h4 className="headerSubtitle">Años de nacimiento: </h4>
         <p className="bodyText">
           {sign.yearsOfBirth}
         </p>
-        <h4 className="headerSubtitle">Predicciones del {sign.header}</h4>
+        <h4 className="headerSubtitle">Predicciones: </h4>
         <p className="bodyText">
           Amor: {sign.predictions.love}
         </p>
@@ -33,15 +33,15 @@ export const Main = ({ data, sign }) => {
           Dinero: {sign.predictions.money}
         </p>
         <p className="bodyText">Salud: {sign.predictions.health}</p>
-        <h4 className="headerSubtitle">Colores de la suerte del {sign.header}</h4>
+        <h4 className="headerSubtitle">Colores de la suerte: </h4>
         <p className="bodyText">
           {sign.luckyColors}
         </p>
-        <h4 className="headerSubtitle">Números de la suerte del {sign.header}</h4>
+        <h4 className="headerSubtitle">Números de la suerte: </h4>
         <p className="bodyText">
           {sign.luckyNumbers}
         </p>
-        <h4 className="headerSubtitle">¿Qué significa el {sign.header}?</h4>
+        <h4 className="headerSubtitle">¿Qué significa este signo?</h4>
         <p className="bodyText">{sign.whatItMeans}</p>
       </div>
       ))}
