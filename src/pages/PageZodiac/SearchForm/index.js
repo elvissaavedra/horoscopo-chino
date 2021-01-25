@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import moment from 'moment';
-import 'moment-lunar';
 
-import { filter, find, map, pipe, prop } from 'ramda';
-
-import { ArrayHoroscope } from '../../../shared/constant/ConstantHoroscope';
-
-// import DatePicker from 'react-date-picker';
+import { ArrayHoroscope, ArrayTypeHoroscope } from '../../../shared/constant/ConstantHoroscope';
 
 import './style.css';
 
@@ -22,19 +17,25 @@ const SearchForm = ({ data }) => {
   const searchSign = (evt) => {
     evt.preventDefault();
 
-    // console.log(inputDate.substr(0, 4));
+    let response,
+      responseType,
+      title,
+      typeName = null;
 
-    let searchS = pipe(
-      find((x) => x.yearsCelebrated === 2021),
-      map((x) => ArrayHoroscope)
-    );
-    console.log(searchS);
-    // let moonYear = Number(moment(evt.target.elements.date.value).lunar().format('YYYY'));
-    // console.log(
-    //   data.find((sign) => {
-    //     return (moonYear - sign.year) % 12 === 0;
-    //   })
-    // );
+    let yearSearch = parseInt(inputDate.substr(0, 4));
+    let digitFinalyearSearch = parseInt(inputDate.substr(3, 4));
+
+    ArrayHoroscope.forEach((object) => {
+      response = object.yearsCelebrated.some((years) => years === yearSearch + 1);
+      if (response) title = object.title;
+    });
+
+    ArrayTypeHoroscope.forEach((object) => {
+      responseType = object.numberType.some((digit) => digit === digitFinalyearSearch);
+      if (responseType) typeName = object.type;
+    });
+
+    console.log(data);
   };
 
   return (
