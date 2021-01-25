@@ -19,6 +19,8 @@ export const Main = ({ data, sign }) => {
         <p className="bodyText">
           {sign.personality}
         </p>
+        <h4 className="headerSubtitle">Elemento fijo: </h4>
+        <p>{sign.fixedElement}</p>
         <h4 className="headerSubtitle">Años de nacimiento del {sign.header}</h4>
         <p className="bodyText">
           {sign.yearsOfBirth}
