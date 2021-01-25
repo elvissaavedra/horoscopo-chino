@@ -10,11 +10,12 @@ const SearchForm = ({ data }) => {
     const searchSign = (evt) => {
         evt.preventDefault();
         let moonYear = Number(moment(evt.target.elements.date.value).lunar().format("YYYY"));
-        let dataFiltered = data.find((sign) => {
+        let dataFiltered = data?.find((sign) => {
             return (moonYear - sign.year) % 12 === 0;
         });
-
-        history.push(`/horoscopo-${dataFiltered.url}`);
+        if (dataFiltered) {
+            history.push(`/horoscopo-${dataFiltered.url}`);
+        }
     };
     const [value, onChange] = useState(new Date());
 
@@ -26,7 +27,7 @@ const SearchForm = ({ data }) => {
                     <h5 className="headerSubtitle">INGRESA TU FECHA DE NACIMIENTO:</h5>
                 </div>
                 <form onSubmit={searchSign} className="searchForm__form">
-                    <DatePicker maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} />
+                    <DatePicker format="dd / MM / yyy" maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} />
                     <button type="submit">BUSCAR</button>
                 </form>
             </div>
