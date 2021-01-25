@@ -1,20 +1,24 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, { useState } from 'react';
+import moment from 'moment';
+import 'moment-lunar';
 
-import DatePicker from "react-date-picker";
-import moment from "moment";
-import "moment-lunar";
+// import DatePicker from 'react-date-picker';
+
+import './style.css';
+
+let currentDay = moment().format('YYYY-MM-DD');
+
 const SearchForm = ({ data }) => {
-    const searchSign = (evt) => {
-        evt.preventDefault();
-        let moonYear = Number(moment(evt.target.elements.date.value).lunar().format("YYYY"));
-        console.log(
-            data.find((sign) => {
-                return (moonYear - sign.year) % 12 === 0;
-            })
-        );
-    };
-    const [value, onChange] = useState(new Date());
+  // const searchSign = (evt) => {
+  //   evt.preventDefault();
+  //   let moonYear = Number(moment(evt.target.elements.date.value).lunar().format('YYYY'));
+  //   console.log(
+  //     data.find((sign) => {
+  //       return (moonYear - sign.year) % 12 === 0;
+  //     })
+  //   );
+  // };
+  const [value, onChange] = useState(new Date());
 
   return (
     <div className="searchForm">
@@ -24,7 +28,15 @@ const SearchForm = ({ data }) => {
           <h5 className="headerSubtitle">INGRESA TU FECHA DE NACIMIENTO:</h5>
         </div>
         <form onSubmit={searchSign} className="searchForm__form">
-          <DatePicker maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} />
+          {/* <DatePicker maxDate={new Date()} className="date" name="date" onChange={onChange} value={value} /> */}
+          <input
+            type="date"
+            className="searchForm__inputDate"
+            min="1900-01-01"
+            max="2031-31-12"
+            onChange={onChange}
+            defaultValue={currentDay}
+          />
           <button type="submit">BUSCAR</button>
         </form>
       </div>

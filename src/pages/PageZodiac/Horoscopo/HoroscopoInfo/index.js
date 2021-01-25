@@ -1,24 +1,29 @@
 import React from 'react';
-import './style.css';
 
-const HoroscopoInfo = () => (
+import '../style.css';
+
+export const HoroscopoInfo = () => (
   <section className="horoscopo-container">
     <h2 className="bodyTitle">Horóscopo Chino</h2>
     <div className="horoscopo-container-text">
       <p className="">
-      En China, entre las artes más antiguas de adivinación, la astrología es una de las que más destaca. Incluso, existen muchos estudios y documentos que hablan sobre su origen y el uso de los doce animales que representan cada uno de los signos zodiacales.
+        En China, entre las artes más antiguas de adivinación, la astrología es una de las que más destaca. Incluso,
+        existen muchos estudios y documentos que hablan sobre su origen y el uso de los doce animales que representan
+        cada uno de los signos zodiacales.
       </p>
       <p>
-      El horóscopo chino, al igual que en la astrología occidental, se basa en las fechas de nacimiento para establecer diferentes características de personalidad. No obstante, si uno quisiera tener una carta natal completa es necesario conocer la hora y el lugar de nacimiento.
+        El horóscopo chino, al igual que en la astrología occidental, se basa en las fechas de nacimiento para
+        establecer diferentes características de personalidad. No obstante, si uno quisiera tener una carta natal
+        completa es necesario conocer la hora y el lugar de nacimiento.
       </p>
       <h3 className="bodySubtitle">¿Cuál es el origen del horóscopo chino?</h3>
       <p>
-      Una leyenda muy popular explica el origen del Horóscopo Chino. El Emperador de Jade, gobernante del cielo según la mitología china, organizó una carrera de animales para definir quiénes de ellos formarían parte del zodiaco. Las posiciones serían ocupadas por aquellos que lograron cruzar un río y el orden en que llegaron a la meta.
+        Una leyenda muy popular explica el origen del Horóscopo Chino. El Emperador de Jade, gobernante del cielo según
+        la mitología china, organizó una carrera de animales para definir quiénes de ellos formarían parte del zodiaco.
+        Las posiciones serían ocupadas por aquellos que lograron cruzar un río y el orden en que llegaron a la meta.
       </p>
       <h3 className="bodySubtitle">¿Cómo saber qué animal soy en el horóscopo chino?</h3>
-      <p>
-      Para saber el signo de una persona en el Horóscopo Chino basta con identificar su año de nacimiento:
-      </p>
+      <p>Para saber el signo de una persona en el Horóscopo Chino basta con identificar su año de nacimiento:</p>
       <p>RATA - Años: 1900, 1912, 1924, 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020.</p>
       <p>BUEY - Años: 1901, 1913, 1925, 1937, 1949, 1961, 1973, 1985, 1997, 2009, 2021.</p>
       <p>TIGRE - Años: 1902, 1914, 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022.</p>
@@ -56,5 +61,3 @@ const HoroscopoInfo = () => (
     </div>
   </section>
 );
-
-export default HoroscopoInfo;

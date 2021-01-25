@@ -19,9 +19,7 @@
 .searchForm__description h5 {
   display: block;
   margin: 0 0 23px;
-}
-.searchForm__description h5 {
-  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
 }
 .searchForm__form {
   flex: 1;
@@ -50,6 +48,10 @@
 }
 .searchForm__form button:hover {
   background-color: var(--colorCherryMainHover);
+}
+.searchForm__inputDate {
+  padding: 5px;
+  border: none;
 }
 
 @media only screen and (min-width: 767px) {
