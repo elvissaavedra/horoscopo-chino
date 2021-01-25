@@ -4,8 +4,9 @@ import { ArrayHoroscope } from "../shared/constant/ConstantHoroscope";
 import fetch from "./fetch";
 
 function useHoroscopeChinesse() {
-    const { data, error } = useSWR("https://qacronosservices.glr.pe/api/spotlight?site_id=larepublica&_id=600863edae8c7e50bd428c64&no-api-cache=1&no-cache=1&status=1", fetch);
-    console.log('data', data)
+    console.log("environment", process.env.GRAPHQLENDPOINT);
+    const { data, error } = useSWR(`${process.env.GRAPHQLENDPOINT}?site_id=larepublica&_id=${process.env.SPOTLIGHT_ID}&no-api-cache=1&no-cache=1&status=1`, fetch);
+    console.log("data", data);
     return {
         horoscopeChinesse: data?.data?.spotlight?.data
             ?.map((sign) =>
