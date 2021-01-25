@@ -9,7 +9,7 @@ export const Main = ({ data, sign }) => {
     <div className="zodiacMain__content">
       {itemSign?.map((sign, i) => (
         <div key={i} className="zodiacMain__contentText">
-        <h1 className="bodyTitle">Características de {sign.header} en el horóscopo chino</h1>
+        <h1 className="bodyTitle">CARACTERÍSTICAS</h1>
         <p className="bodyText">
           {sign.description}
         </p>

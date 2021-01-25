@@ -4,7 +4,7 @@ import '../style.css';
 
 export const HoroscopoInfo = () => (
   <section className="horoscopo-container">
-    <h2 className="bodyTitle">Horóscopo Chino</h2>
+    <h2 className="bodyTitle">¿QUÉ ES EL HORÓSCOPO CHINO?</h2>
     <div className="horoscopo-container-text">
       <p className="">
         En China, entre las artes más antiguas de adivinación, la astrología es una de las que más destaca. Incluso,
