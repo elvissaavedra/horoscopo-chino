@@ -4,9 +4,7 @@ import { ArrayHoroscope } from "../shared/constant/ConstantHoroscope";
 import fetch from "./fetch";
 
 function useHoroscopeChinesse() {
-    console.log("environment", process.env);
     const { data, error } = useSWR(`${process.env.REACT_APP_GRAPHQL_ENDPOINT}?site_id=larepublica&_id=${process.env.REACT_APP_SPOTLIGHT_ID}&no-api-cache=1&no-cache=1&status=1`, fetch);
-    console.log("data", data);
     return {
         horoscopeChinesse: data?.data?.spotlight?.data
             ?.map((sign) =>
