@@ -1,85 +1,85 @@
 .searchForm {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0.8rem 0;
-  gap: 30px;
-  flex-wrap: wrap;
-  background-color: var(--colorGrey);
-  width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.8rem 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: var(--colorGrey);
+    width: 100%;
 }
 .searchForm__content {
-  padding: 15px;
+    padding: 15px;
 }
 .searchForm__description {
-  flex: 2;
+    flex: 3;
 }
 .searchForm__description h5 {
-  display: block;
-  margin: 0 0 23px;
-  letter-spacing: -0.5px;
+    display: block;
+    margin: 0 0 23px;
+}
+.searchForm__description h5 {
+    margin-bottom: 0.5rem;
 }
 .searchForm__form {
-  flex: 1;
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-.searchForm__inputDate {
-  padding: 5px;
-}
-.searchForm__form button[type='submit'] {
-  color: var(--colorWhite);
-  border-radius: 3px;
-  background-color: var(--colorCherryMain);
-  padding: 10px;
-  margin-left: 10px;
-  border: none;
-  cursor: pointer;
-}
-.searchForm__form button:hover {
-  background-color: var(--colorCherryMainHover);
-}
-.searchForm__form button[type='submit'] {
-  color: var(--colorWhite);
-  border-radius: 3px;
-  background-color: var(--colorCherryMain);
-  padding: 10px;
-  margin-left: 10px;
-  border: none;
-  cursor: pointer;
-}
-/* .searchForm__form button:hover {
-    background-color: var(--colorCherryMainHover);
-} */
-.react-date-picker__wrapper {
-  flex-direction: row-reverse;
-}
-.react-date-picker__clear-button {
-  display: none;
-}
-.react-date-picker__button:hover {
-  background: none !important;
-}
-
-@media only screen and (min-width: 767px) {
-  .searchForm__content {
+    flex: 1;
     display: flex;
     width: 100%;
     align-items: center;
+}
+.searchForm__inputDate {
+    padding: 5px;
   }
-  .searchForm__description {
-    display: block;
-    text-align: left;
-  }
-  .searchForm__description h5 {
-    display: inline;
-    margin-bottom: 0;
-    margin-right: 5px;
-  }
-  .headerSubtitle {
-    display: inline;
-  }
+.searchForm__form .date {
+    width: 100%;
+    border: solid 1px var(--colorBorder);
+    border-radius: 3px;
+    background-color: var(--colorWhite);
+}
+.searchForm__form .date .react-date-picker__wrapper {
+    padding: 7px;
+    border: none;
+}
+.searchForm__form button[type="submit"] {
+    color: var(--colorWhite);
+    border-radius: 3px;
+    background-color: var(--colorCherryMain);
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.searchForm__form button:hover {
+    background-color: var(--colorCherryMainHover);
+}
+.react-date-picker__wrapper {
+    flex-direction: row-reverse;
+}
+.react-date-picker__clear-button {
+    display: none;
+}
+.react-date-picker__button:hover {
+    background: none !important;
+}
+
+@media only screen and (min-width: 767px) {
+    .searchForm__content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .searchForm__description {
+        display: block;
+        text-align: left;
+    }
+    .searchForm__description h5 {
+        display: inline;
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+    .headerSubtitle {
+        display: inline;
+    }
 }
