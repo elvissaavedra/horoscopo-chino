@@ -21,7 +21,7 @@ export const PageZodiac = () => {
     const lastNumber = currentYear.toString().slice(currentYear.toString().length - 1);
     let element;
     switch (lastNumber) {
-      case '0':
+      case '0' :
         element = 'Metal';
       break;
       case '1':

@@ -9,6 +9,7 @@ const SearchForm = ({ data }) => {
     let history = useHistory();
     const searchSign = (evt) => {
         evt.preventDefault();
+        console.log(new Date(evt.target.elements.date.value))
         let moonYear = Number(moment(evt.target.elements.date.value).lunar().format("YYYY"));
         let dataFiltered = data?.find((sign) => {
             return (moonYear - sign.year) % 12 === 0;
