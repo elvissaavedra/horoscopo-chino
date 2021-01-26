@@ -3,7 +3,8 @@ export const ArrayHoroscope = [
     title: 'RATA',
     image: '/images/Rata.png',
     url: 'rata',
-    yearsCelebrated: [1900, 1912, 1924, 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020],
+    year: 1900,
+    fixedElement: 'Agua',
     description:
       'El año nuevo chino inicia este 12 de febrero y el animal que regirá en el horóscopo asiático será el Buey, quien traerá nuevos retos para los 12 signos zodiacales. En el caso de la rata, estas personas no necesitan forzar mucho las cosas, pues las buenas noticias llegarán en el momento menos esperado.',
     howIs:
@@ -30,7 +31,8 @@ export const ArrayHoroscope = [
     title: 'BUEY',
     image: '/images/Buey.png',
     url: 'buey',
-    yearsCelebrated: [1901, 1913, 1925, 1937, 1949, 1961, 1973, 1985, 1997, 2009, 2021],
+    year: 1901,
+    fixedElement: 'Tierra',
     description:
       'El Año Nuevo Chino de este 2021 será el Año del Búfalo o Buey, según el calendario chino este será un año próspero para todos los que nacieron bajo este signo. Se llenarán de buena energía en el campo de la finanzas y en sus próximos proyectos. ',
     howIs:
@@ -58,7 +60,8 @@ export const ArrayHoroscope = [
     title: 'TIGRE',
     image: '/images/Tigre.png',
     url: 'tigre',
-    yearsCelebrated: [1902, 1914, 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022],
+    year: 1902,
+    fixedElement: 'Madera',
     description:
       'El Año del Buey trae grandes sorpresas en el amor, salud, dinero y trabajo, de acuerdo a tu signo del zodiaco chino. Con su inicio este 12 de febrero, conoce los retos que te deparan a lo largo del año 2021.',
     howIs:
@@ -85,7 +88,8 @@ export const ArrayHoroscope = [
     title: 'CONEJO',
     image: '/images/Conejo.png',
     url: 'conejo',
-    yearsCelebrated: [1903, 1915, 1927, 1939, 1951, 1963, 1975, 1987, 1999, 2023],
+    year: 1903,
+    fixedElement: 'Madera',
     description:
       'El Año del Buey de metal ya está aquí, y en esta nota te presentamos todas las predicciones del signo del conejo en el dinero, el amor, la salud y el trabajo. Si te representa este animal, entonces conoce qué te depara el horóscopo chino para el 2021.',
     howIs:
@@ -112,7 +116,8 @@ export const ArrayHoroscope = [
     title: 'MONO',
     image: '/images/Mono.png',
     url: 'mono',
-    yearsCelebrated: [1908, 1920, 1932, 1944, 1956, 1968, 1980, 1992, 2004, 2016, 2028],
+    year: 1908,
+    fixedElement: 'Metal',
     description:
       'Este 2021 es un tiempo lleno de novedades y transformaciones para los 12 signos del horóscopo chino. Si estás bajo la influencia del mono, revisa las siguientes predicciones en amor, salud, trabajo y dinero para este Año.',
     howIs:
@@ -137,7 +142,8 @@ export const ArrayHoroscope = [
     title: 'CABRA',
     image: '/images/Cabra.png',
     url: 'cabra',
-    yearsCelebrated: [1907, 1919, 1931, 1943, 1955, 1967, 1979, 1991, 2003, 2015, 2027],
+    year: 1907,
+    fixedElement: 'Tierra',
     description:
       'Entramos al 2021, un año que trae transformaciones y cambios a los 12 signos del horóscopo chino. Si naciste bajo la influencia de la cabra, revisa a continuación las predicciones más completas para este nuevo período en salud, amor, dinero y trabajo.',
     howIs:
@@ -160,10 +166,11 @@ export const ArrayHoroscope = [
       'En la cultura china, la cabra simboliza la belleza y la buena suerte. Este animal del horóscopo chino también está vinculado a la bondad.',
   },
   {
-    title: 'DRAGON',
+    title: 'DRAGÓN',
     image: '/images/Dragon.png',
     url: 'dragon',
-    yearsCelebrated: [1904, 1916, 1928, 1940, 1952, 1964, 1976, 1988, 2000, 2012, 2024],
+    year: 1904,
+    fixedElement: 'Tierra',
     description:
       'Ya estamos en el 2021. Y con un nuevo año, es menester saber cómo le irá en el amor, dinero y salud a las personas representadas por el signo del dragón en el horóscopo chino. Si estás identificado con este animal, averigua en esta nota tu suerte para este periodo.',
     howIs:
@@ -189,7 +196,8 @@ export const ArrayHoroscope = [
     title: 'SERPIENTE',
     image: '/images/Serpiente.png',
     url: 'serpiente',
-    yearsCelebrated: [1905, 1917, 1929, 1941, 1953, 1965, 1977, 1989, 2001, 2013, 2025],
+    year: 1905,
+    fixedElement: 'Fuego',
     description:
       'Estamos en 2021, un nuevo periodo cargado de grandes novedades en el amor, la salud, el dinero y el trabajo para los 12 signos del horóscopo chino. Si naciste bajo el signo de la Serpiente, descubre aquí las predicciones que te reserva el destino para el Año del Buey de Metal.',
     howIs:
@@ -215,7 +223,8 @@ export const ArrayHoroscope = [
     title: 'CABALLO',
     image: '/images/Caballo.png',
     url: 'caballo',
-    yearsCelebrated: [1906, 1918, 1930, 1942, 1954, 1966, 1978, 1990, 2002, 2014, 2026],
+    year: 1906,
+    fixedElement: 'Fuego',
     description:
       'Estamos en el 2021, un periodo que traerá novedades significativas a los 12 signos del horóscopo chino. Si naciste bajo la influencia del caballo, revisa aquí las predicciones para este Año del Buey de Metal en salud, dinero, amor y trabajo. También conoce los números y colores que te traerán suerte durante todos estos meses.',
     howIs:
@@ -242,7 +251,8 @@ export const ArrayHoroscope = [
     title: 'GALLO',
     image: '/images/Gallo.png',
     url: 'gallo',
-    yearsCelebrated: [1909, 1921, 1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017, 2029],
+    year: 1909,
+    fixedElement: 'Metal',
     description:
       'El año del Buey comienza el 12 de febrero y trae muchas novedades y desafíos para los 12 signos del horóscopo chino. En el caso del gallo, se beneficiará con una mayor lucidez para tomar decisiones importantes que aseguran su futuro y tranquilidad.',
     howIs:
@@ -268,7 +278,8 @@ export const ArrayHoroscope = [
     title: 'PERRO',
     url: 'perro',
     image: '/images/Perro.png',
-    yearsCelebrated: [1910, 1922, 1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018, 2030],
+    year: 1910,
+    fixedElement: 'Tierra',
     description:
       'El Año del Buey trae nuevos retos para el signo del perro, ya que ellos deberán sacar lecciones positivas y negativas de actitudes pasadas. Además, es importante que no realicen cambios radicales en su vida a fin de que puedan mantener el equilibro.',
     howIs:
@@ -295,7 +306,8 @@ export const ArrayHoroscope = [
     title: 'CERDO',
     image: '/images/Cerdo.png',
     url: 'cerdo',
-    yearsCelebrated: [1911, 1923, 1935, 1947, 1971, 1983, 1995, 2007, 2019, 2031],
+    year: 1911,
+    fixedElement: 'Agua',
     description:
       'El Año del Buey de metal ya arrancó, y en esta nota conocerás todas las predicciones del signo del cerdo en el amor, dinero y salud. Si estás representado por este animal, desde aquí conocerás cómo te irá en este 2021.',
     howIs:
@@ -316,28 +328,5 @@ export const ArrayHoroscope = [
     luckyNumbers: '4, 8 y 12.',
     whatItMeans:
       'En la cultura china, el cerdo está relacionado con la fertilidad y virilidad. Las personas que nacen bajo este signo del zodiaco chino son consideradas muy afortunadas, felices y honradas durante su vida.',
-  },
-];
-
-export const ArrayTypeZodiac = [
-  {
-    typeName: 'Metal',
-    typeNumber: [0, 1],
-  },
-  {
-    typeName: 'Agua',
-    typeNumber: [2, 3],
-  },
-  {
-    typeName: 'Madera',
-    typeNumber: [4, 5],
-  },
-  {
-    typeName: 'Fuego',
-    typeNumber: [6, 7],
-  },
-  {
-    typeName: 'Tierra',
-    typeNumber: [8, 9],
   },
 ];

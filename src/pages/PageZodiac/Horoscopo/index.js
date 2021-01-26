@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { HoroscopoYear } from './HoroscopoYear';
-import { HoroscopoInfo } from './HoroscopoInfo';
+import { HoroscopoYear } from './HoroscopoYear/index';
+import { HoroscopoInfo } from './HoroscopoInfo/index';
 
-export const Horoscopo = () => {
+export const Horoscopo = ({ sign, element }) => {
   return (
     <>
       <HoroscopoInfo />
-      <HoroscopoYear />
+      <HoroscopoYear sign={sign} element={element} />
     </>
   );
 };

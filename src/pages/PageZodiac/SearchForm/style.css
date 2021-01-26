@@ -27,15 +27,8 @@
   width: 100%;
   align-items: center;
 }
-.searchForm__form .date {
-  width: 100%;
-  border: solid 1px var(--colorBorder);
-  border-radius: 3px;
-  background-color: var(--colorWhite);
-}
-.searchForm__form .date .react-date-picker__wrapper {
-  padding: 7px;
-  border: none;
+.searchForm__inputDate {
+  padding: 5px;
 }
 .searchForm__form button[type='submit'] {
   color: var(--colorWhite);
@@ -49,14 +42,26 @@
 .searchForm__form button:hover {
   background-color: var(--colorCherryMainHover);
 }
+.searchForm__form button[type='submit'] {
+  color: var(--colorWhite);
+  border-radius: 3px;
+  background-color: var(--colorCherryMain);
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+/* .searchForm__form button:hover {
+    background-color: var(--colorCherryMainHover);
+} */
 .react-date-picker__wrapper {
   flex-direction: row-reverse;
 }
 .react-date-picker__clear-button {
   display: none;
 }
-.searchForm__form button:hover {
-  background: #fff;
+.react-date-picker__button:hover {
+  background: none !important;
 }
 
 @media only screen and (min-width: 767px) {
