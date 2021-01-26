@@ -8,7 +8,6 @@ function useHoroscopeChinesse() {
     'https://qacronosservices.glr.pe/api/spotlight?site_id=larepublica&_id=600863edae8c7e50bd428c64&no-api-cache=1&no-cache=1&status=1',
     fetch
   );
-  console.log('data', data);
   return {
     horoscopeChinesse: data?.data?.spotlight?.data
       ?.map((sign) =>

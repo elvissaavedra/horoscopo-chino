@@ -16,11 +16,7 @@ import './index.css';
 
 export const PageZodiac = () => {
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
-  // const listHoroscopeChinesse = prop(
-  //   'data',
-  //   path('0', prop('data', prop('spotlight', prop('data', horoscopeChinesse))))
-  // );
-  // console.log(horoscopeChinesse);
+
   if (isLoading) return <Loading />;
 
   return (

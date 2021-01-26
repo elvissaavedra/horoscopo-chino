@@ -10,8 +10,8 @@ import { Button } from '../../shared/components/Button';
 
 export const PageZodiacInternal = () => {
   const { sign } = useParams();
-  console.log(sign);
   const { horoscopeChinesse, isLoading } = useHoroscopeChinesse();
+
   if (isLoading) return <Loading />;
 
   return (
